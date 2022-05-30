@@ -1,0 +1,8 @@
+install.packages("BiocManager", repos='http://cran.us.r-project.org')
+library(BiocManager)
+install('GenomicAlignments', ask = FALSE)
+install('GenomicFeatures', ask = FALSE)
+install('ChIPseeker', ask = FALSE)
+install('Seurat', ask = FALSE)
+install('SeuratDisk', ask = FALSE)
+install('anndata', ask = FALSE)
