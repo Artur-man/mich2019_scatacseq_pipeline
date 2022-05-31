@@ -41,7 +41,5 @@ RUN git clone https://github.com/dolphinnext/tools /usr/local/bin/dolphin-tools
 RUN mkdir -p /project /nl /mnt /share
 ENV PATH /opt/conda/envs/dolphinnext-graybuck2019-1.0/bin:/usr/local/bin/dolphin-tools/:$PATH
 
-RUN pip install "multiqc==1.7"
-
 COPY r_packages.R /
 RUN Rscript r_packages.R
