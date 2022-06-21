@@ -39,7 +39,7 @@ RUN apt-get -y install zip unzip gcc g++ make
 # Install dolphin-tools
 RUN git clone https://github.com/dolphinnext/tools /usr/local/bin/dolphin-tools
 RUN mkdir -p /project /nl /mnt /share
-ENV PATH /opt/conda/envs/dolphinnext-graybuck2019-1.0/bin:/usr/local/bin/dolphin-tools/:$PATH
+ENV PATH /opt/conda/envs/dolphinnext-mich2021-1.0/bin:/usr/local/bin/dolphin-tools/:$PATH
 
 COPY r_packages.R /
 RUN Rscript r_packages.R
